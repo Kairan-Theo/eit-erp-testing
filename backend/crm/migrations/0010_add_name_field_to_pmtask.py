@@ -2,7 +2,7 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('crm', '0009_add_missing_task_dates'),
+        ('crm', '0008_pmproject_pmtask'),
     ]
     operations = [
         # Add a 'name' column to PM_task to store a human-readable task name.
