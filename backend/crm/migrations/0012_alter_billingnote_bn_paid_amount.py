@@ -10,7 +10,11 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AlterField(
+        migrations.RemoveField(
+            model_name='billingnote',
+            name='bn_paid_amount',
+        ),
+        migrations.AddField(
             model_name='billingnote',
             name='bn_paid_amount',
             field=models.DateField(blank=True, null=True, verbose_name='Bn tax paid'),
